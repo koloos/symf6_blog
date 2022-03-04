@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/main', name: 'app_main')]
+    #[Route('/', name: 'main')]
     public function index(ArticleRepository $articleRepository): Response
     {
 
@@ -17,6 +17,17 @@ class MainController extends AbstractController
         
         return $this->render('main/index.html.twig', [
             "articles" => $articles
+        ]);
+    }
+
+    #[Route('/articles/{id}', name: 'app_articles_id')]
+    public function getArticleById($id, ArticleRepository $articleRepository)
+    {
+
+        $article = $articleRepository->find($id);
+  
+        return $this->render('main/article.html.twig', [
+            "article" => $article,
         ]);
     }
 }

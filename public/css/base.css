@@ -1,77 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700&family=Merienda:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700&family=Merienda:wght@400;700&display=swap");
 
-body{
-    width: 100vw;
-    padding: 0;
-    margin: 0;
+/* Début Base-Index */
+
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Arima Madurai", cursive;
 }
 
-h1{
-    text-align: center;
-    font-family: "Merienda", cursive;
-    padding: 1rem;
-    margin: 0;
+h1 {
+  text-align: center;
+  font-family: "Merienda", cursive;
+  padding: 1rem;
+  margin: 0;
 }
 
-.contain{
-    margin: auto;
-    width: 95vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
+.contain {
+  margin: auto;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.9;
-    margin: auto .5vw;
-    width: 30vw;
-    height: 40vw;
-    border-radius: 5px;
-    border: 0.5px solid rgba(196, 196, 196, 0.6);
-    box-shadow: 0 0 2px 1px rgba(196, 196, 196, 0.6);
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  margin: auto 0.5vw;
+  width: 30vw;
+  height: 40vw;
+  border-radius: 5px;
+  border: 0.5px solid rgba(196, 196, 196, 0.6);
+  box-shadow: 0 0 2px 1px rgba(196, 196, 196, 0.6);
 }
 
-.article img{
-    width: 28vw;
-    padding: .5rem 0;
-    margin: 0;
+.article img {
+  width: 28vw;
+  padding: 0.5rem 0;
+  margin: 0;
 }
 
-.article h2{
-    margin: 0;
-    padding: .5rem 0;
-    font-family: "Merienda", cursive;
-    font-size: 1.5rem;
-    font-weight: 100;
-    text-align: center;
+.article h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-family: "Merienda", cursive;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
 }
 
-.article .box-contain{
-    padding: 0;
-    margin: 0;
-    height: 20vw;
-    font-family: "Arima Madurai", cursive;
-    font-weight: 400;
+.article h2 a {
+  color: #333d29;
+  text-decoration: none;
 }
 
-.article .description{
-    margin: 0;
-    padding: .2rem 2rem;
+.article h2 a:hover {
+  color: #cb997e;
+  text-decoration: none;
 }
 
-.article .description p{
-    padding: 0;
-    margin: 0;
+.article .box-contain {
+  padding: 0;
+  margin: 0;
+  height: 20vw;
+  font-family: "Arima Madurai", cursive;
+  font-weight: 400;
 }
 
-.article .contenu{
-    text-align: justify;
-    font-family: "Arima Madurai", cursive;
-    font-weight: 400;
+.article .description {
+  margin: 0;
+  padding: 0.2rem 2rem;
+}
+
+.article .description p {
+  padding: 0;
+  margin: 0;
+}
+
+.article .contenu {
+  text-align: justify;
+  font-family: "Arima Madurai", cursive;
+  font-weight: 400;
+}
+
+/* Fin Base-Index */
+
+/* Début pages article */
+
+.art-contain {
+  margin: auto;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.art-contain h2 {
+  margin: auto;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.art-contain .author {
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+
+.art-contain .author span {
+  font-weight: 600;
+}
+
+.contain-comm {
+  margin: 0;
+  padding-left: 2vw;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.contain-comm h2 {
+  margin: 0;
+}
+
+.contain-comm p {
+  margin: 0;
+}
+
+.contain-comm .comm {
+  background-color: #c4c4c4;
+  margin-bottom: 2vw;
+  padding-left: 1vw;
 }

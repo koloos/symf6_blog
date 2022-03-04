@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{article.titre}}
+{% endblock %}
+
+{% block body %}
+	<h1>{{ article.titre }}</h1>
+
+	<div class="art-contain">
+		<h2 class="description"><u>Catégorie</u>
+			:
+			{{ article.categorie.nom }}</h2>
+
+		<p><u>Date de publication</u> : {{ article.datePublication|date("d/m/Y") }}</p>
+		<img src="../{{ article.imageSrc }}">
+		<p class="description contenu">{{ article.contenu }}</p>
+		<p class="author">rédigé par 
+			 <span>{{ article.user.pseudo }}</span></p>
+		<p class="description">
+			<u>Nombre de vues</u>
+			:
+			{{ article.nombreVues }}</p>
+
+	</div>
+    <div class="contain-comm">
+		<h2 class="title-comm">Commentaires :</h2>
+
+        <div class="comm">
+		{% for commentaire in article.commentaires %}
+			{% if commentaire.publie %}
+				<p>Id du commentaire :
+					{{ commentaire.id }}</p>
+				<p>Posté le :
+					{{ commentaire.dateCommentaire|date("d/m/Y") }}
+					par
+					{{ commentaire.user.pseudo }}</p>
+				<p>{{ commentaire.contenuCommentaire }}</p>
+			{% endif %}
+		{% endfor %}
+        </div>
+    </div>
+{% endblock %}
