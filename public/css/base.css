@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700&family=Merienda:wght@400;700&display=swap');
+
+body{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: "Merienda", cursive;
+    padding: 1rem;
+    margin: 0;
+}
+
+.contain{
+    margin: auto;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    margin: auto .5vw;
+    width: 30vw;
+    height: 40vw;
+    border-radius: 5px;
+    border: 0.5px solid rgba(196, 196, 196, 0.6);
+    box-shadow: 0 0 2px 1px rgba(196, 196, 196, 0.6);
+}
+
+.article img{
+    width: 28vw;
+    padding: .5rem 0;
+    margin: 0;
+}
+
+.article h2{
+    margin: 0;
+    padding: .5rem 0;
+    font-family: "Merienda", cursive;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.article .box-contain{
+    padding: 0;
+    margin: 0;
+    height: 20vw;
+    font-family: "Arima Madurai", cursive;
+    font-weight: 400;
+}
+
+.article .description{
+    margin: 0;
+    padding: .2rem 2rem;
+}
+
+.article .description p{
+    padding: 0;
+    margin: 0;
+}
+
+.article .contenu{
+    text-align: justify;
+    font-family: "Arima Madurai", cursive;
+    font-weight: 400;
+}

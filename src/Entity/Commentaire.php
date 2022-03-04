@@ -22,6 +22,14 @@ class Commentaire
     #[ORM\Column(type: 'boolean')]
     private $publie;
 
+    #[ORM\ManyToOne(targetEntity: Article::class, inversedBy: 'commentaires')]
+    #[ORM\JoinColumn(nullable: false)]
+    private $article;
+
+    #[ORM\ManyToOne(targetEntity: User::class, inversedBy: 'commentaires')]
+    #[ORM\JoinColumn(nullable: false)]
+    private $user;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -59,6 +67,30 @@ class Commentaire
     public function setPublie(bool $publie): self
     {
         $this->publie = $publie;
+
+        return $this;
+    }
+
+    public function getArticle(): ?Article
+    {
+        return $this->article;
+    }
+
+    public function setArticle(?Article $article): self
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

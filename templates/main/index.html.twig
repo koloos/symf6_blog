@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Main{% endblock %}
+
+{% block body %}
+<h1>Main</h1>
+
+<div class="contain">
+
+{% for article in articles %}
+<div class="article">
+    <h2>{{ article.titre }} du {{ article.datePublication|date("d/m/Y") }} rédigé par {{ article.user.pseudo }}</h2>
+    <img src="{{ article.imageSrc }}">
+    <div class="box-contain">
+        <p class="description"><u>Catégorie</u> : {{ article.categorie.nom }}</p>
+        <p class="description"><u>Nombre de vues</u> : {{ article.nombreVues }}</p>
+        <p class="description contenu">{{ article.contenu }}</p>
+    </div>
+</div> 
+{% endfor %}
+
+</div>
+
+{% endblock %}
