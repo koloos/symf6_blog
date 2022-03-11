@@ -53,7 +53,7 @@ class AppFixtures extends Fixture
                  $article->setContenu("Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio aliquam quos pariatur commodi sunt animi unde, beatae reprehenderit atque doloribus eligendi numquam ipsa molestias earum quasi tempore. Vel, quos eius.
                  ");
                  $article->setDatePublication(new \DateTime());
-                 $article->setImageSrc("images/toto.jpg");
+                 $article->setImageSrc("/images/toto.jpg");
                  $article->setNombreVues(0);
                  $article->setCategorie($cat);
                  $article->setUser($lila);

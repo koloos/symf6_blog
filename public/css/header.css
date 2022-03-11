@@ -64,7 +64,7 @@ header nav ul li a:hover{
     text-decoration: none;
 }
 
-header nav ul li a:active{
+header nav ul li a:visited{
     color: #cb997e;
     text-decoration: none;
 }

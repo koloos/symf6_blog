@@ -17,6 +17,21 @@ h1 {
   margin: 0;
 }
 
+a{
+  color: #333D29;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #cb997e;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #cb997e;
+  text-decoration: none;
+}
+
 .contain {
   margin: auto;
   width: 95vw;
@@ -97,9 +112,9 @@ h1 {
 .art-contain {
   margin: auto;
   width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  /* display: flex;
+  flex-wrap: wrap; 
+  gap: 0.5rem;*/
 }
 
 .art-contain h2 {
@@ -110,6 +125,19 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+.art-contain .publication{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.art-contain img{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .art-contain .author {
@@ -145,4 +173,88 @@ h1 {
   background-color: #c4c4c4;
   margin-bottom: 2vw;
   padding-left: 1vw;
+  border: 1px solid #c4c4c4;
 }
+
+/* Fin pages article */
+
+/* Début table */
+
+.t-contain{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.table thead{
+  border: 1px solid #c4c4c4;
+  padding: 2px;
+}
+
+.table tbody{
+  border: 1px solid #c4c4c4;
+  padding: 2px;
+}
+
+.table td{
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.table td img{
+  width: 5vw;
+}
+
+/* Fin table */
+
+/* Début Admin Nav */
+
+.adminNav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 3vw;
+  background-color: #fff;
+  color: #333D29;
+  box-shadow: 0 0 3px .5px #c4c4c4;
+}
+
+.adminNav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.adminNav ul li{
+  display: flex;
+  list-style: none;
+  font-family: "Arima Madurai", cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.adminNav ul li a{
+  color: #333D29;
+  text-decoration: none;
+}
+
+.adminNav ul li a:hover{
+  color: #cb997e;
+  text-decoration: none;
+}
+
+.adminNav ul li a:visited{
+  color: #cb997e;
+  text-decoration: none;
+}
+
+/* Fin Admin Nav */

@@ -12,7 +12,7 @@
 			:
 			{{ article.categorie.nom }}</h2>
 
-		<p><u>Date de publication</u> : {{ article.datePublication|date("d/m/Y") }}</p>
+		<p class="publication"><u>Date de publication</u> : {{ article.datePublication|date("d/m/Y") }}</p>
 		<img src="../{{ article.imageSrc }}">
 		<p class="description contenu">{{ article.contenu }}</p>
 		<p class="author">rédigé par 
@@ -23,6 +23,12 @@
 			{{ article.nombreVues }}</p>
 
 	</div>
+
+{% if app.user %}
+	<h2>Rédigez votre commentaire</h2>
+	{{ form(commForm) }}
+{% endif %}
+
     <div class="contain-comm">
 		<h2 class="title-comm">Commentaires :</h2>
 
