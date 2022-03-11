@@ -59,22 +59,22 @@ class MainController extends AbstractController
         ]);
     }
 
-    #[Route('/email', name: 'app_email')]
-    public function sendEmail(MailerInterface $mailer): Response
-    {
-        $email = (new Email())
-            ->from('noos.noreply@gmail.com')
-            ->to('nolwennlaxaguepro@gmail.com')
-            //->cc('cc@example.com')
-            //->bcc('bcc@example.com')
-            //->replyTo('fabien@example.com')
-            //->priority(Email::PRIORITY_HIGH)
-            ->subject('Valid your register!')
-            ->text('Valide ton inscription.')
-            ->html('<p>Félicitation ! Tu es bien inscrit sur le blog.</p>');
+    // #[Route('/email', name: 'app_email')]
+    // public function sendEmail(MailerInterface $mailer): Response
+    // {
+    //     $email = (new Email())
+    //         ->from('noos.noreply@gmail.com')
+    //         ->to('nolwennlaxaguepro@gmail.com')
+    //         //->cc('cc@example.com')
+    //         //->bcc('bcc@example.com')
+    //         //->replyTo('fabien@example.com')
+    //         //->priority(Email::PRIORITY_HIGH)
+    //         ->subject('Valid your register!')
+    //         ->text('Valide ton inscription.')
+    //         ->html('<p>Félicitation ! Tu es bien inscrit sur le blog.</p>');
 
-        $mailer->send($email);
+    //     $mailer->send($email);
 
-        $this->redirectToRoute('main');
-    }
+    //     $this->redirectToRoute('main');
+    // }
 }
